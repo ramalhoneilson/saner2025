@@ -1,7 +1,9 @@
 import os
 import ast
 import pandas as pd
-SOURCE_FILE = '/home/user/projects/qta/source_files.txt'
+# change this path so that the script reads the list of tests from a text file
+SOURCE_FILE = 'Change me'
+# Ex: SOURCE_FILE = '/home/user/projects/qta/source_files.txt'
 
 
 def count_test_methods_and_assertions_in_file(file_path):
@@ -84,4 +86,4 @@ if __name__ == "__main__":
     print("Assertions dataframe:")
     df = pd.DataFrame.from_dict(all_assertions_dict, orient='index', columns=['num_occur'])
     df.index.name = 'assertion_name'
-    df.to_csv('assertions.csv')
+    df.to_csv('data/assertions.csv')

@@ -2,6 +2,7 @@ import os
 import ast
 
 PROJECT = 'qiskit-algorithms'
+# path where qiskit-algorithms test folder is located. In my case, it was in a folder called projects in my home directory
 PROJECT_FOLDER = f'~/projects/{PROJECT}/test'
 
 def count_test_methods_in_file(file_path):
