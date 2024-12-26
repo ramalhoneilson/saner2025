@@ -22,9 +22,33 @@ Although classical computing has excelled in a wide range of applications, there
 ## Getting Started
 
 ### Prerequisites
-Python 3.10
 
-### Usage
+- Python 3.10 or higher
+- pandas library
+- Anaconda (recommended) or Python installed in your operating system
+
+While we recommend using Anaconda with a virtual environment for better dependency management, the scripts should work with any Python installation as long as pandas is available, since it's a common library.
+
+### Environment Setup
+
+#### Using Anaconda (Recommended)
+```bash
+# Create a new conda environment
+conda create -n quantumtesting python=3.12
+
+# Activate the environment
+conda activate quantumtesting
+
+# Install required package
+conda install pandas
+```
+
+#### Using Pip (Alternative)
+```bash
+pip install pandas
+```
+
+#### Usage
 ```bash
 # Example commands to run the analysis scripts
 python count_assertions.py
